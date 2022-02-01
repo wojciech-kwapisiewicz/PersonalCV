@@ -14,7 +14,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \hyphenpenalty 10000
 \exhyphenpenalty 10000
+
+\iffalse 
+WK: No foot note for US resume
 \lfoot{\footnotesize{\textit{I declare, that I agree to have my personal data, if it necessary, processed for recruitment process (according to the Act of personal data protection, dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).}}}
+\fi
 
 \begin{document}
 
@@ -28,10 +32,13 @@
 	Git:    & https://github.com/kwapisiewicz \\
 	LinkedIn: & https://www.linkedin.com/in/wojciech-kwapisiewicz/
 \end{tabular}\\
+\iffalse 
+WK: No picture for US resume
 \begin{tikzpicture}[remember picture, overlay]
 \node [anchor=north east, inner sep=60pt]  at (current page.north east)
 {\includegraphics[scale=0.9]{picture.jpg}};
 \end{tikzpicture}
+\fi
 \\
 \\
 \input{professionalprofile.tex}
@@ -46,9 +53,12 @@
 \input{skills.tex}
 \\
 \\
+\iffalse 
+WK: No foreign languages for US resume
 \input{foreignLanguages.tex}
 \\
 \\
+\fi
 \input{personalInterests.tex}
 
 \end{document}
