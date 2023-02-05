@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[twoside,a4paper,10pt]{article}
 \usepackage[margin=0.9in]{geometry}
 \usepackage{tabularx}
 
@@ -15,10 +15,10 @@
 \hyphenpenalty 10000
 \exhyphenpenalty 10000
 
-\iffalse 
-WK: No foot note for US resume
-\lfoot{\footnotesize{\textit{I declare, that I agree to have my personal data, if it necessary, processed for recruitment process (according to the Act of personal data protection, dated 29 of August 1997, Dz. U. Nr 133 Poz. 883).}}}
-\fi
+%\lfoot{\footnotesize{\textit{...}}}
+%\fancyfoot[EL]{\footnotesize\textit{{I hereby consent to my personal data being processed by (company name) for the purpose of considering my application for the vacancy advertised under reference number (123XX6 etc.)}}}
+%I agree to the processing of personal data provided in this document for realising the recruitment process%+
+\fancyfoot[EL]{\footnotesize\textit{{I hereby consent to my personal data being processed for the purpose of recruitment process.}}}
 
 \begin{document}
 
@@ -26,19 +26,19 @@ WK: No foot note for US resume
 	\textbf{Wojciech Kwapisiewicz}
 \end{LARGE}\\
 \\
-\begin{tabular}{p{0.2\textwidth-2\tabcolsep}|p{0.6\textwidth}}
-	Cell phone: & +48 691 528 861                  \\
-	E-mail:     & Wojciech.Kwapisiewicz@gmail.com\\
+\begin{tabular}{p{0.15\textwidth-2\tabcolsep}|p{0.6\textwidth}}
+	Phone: & +48 691 528 861                  \\
+	E-mail:     & wojciech.kwapisiewicz@gmail.com\\
 	Git:    & https://github.com/wojciech-kwapisiewicz \\
 	LinkedIn: & https://www.linkedin.com/in/wojciech-kwapisiewicz
 \end{tabular}\\
-\iffalse 
-WK: No picture for US resume
+%\iffalse 
+%WK: No picture for US resume
 \begin{tikzpicture}[remember picture, overlay]
 \node [anchor=north east, inner sep=60pt]  at (current page.north east)
-{\includegraphics[scale=0.9]{picture.jpg}};
+{\includegraphics[scale=1.1]{picture.jpg}};
 \end{tikzpicture}
-\fi
+%\fi
 \\
 \\
 \input{professionalprofile.tex}
